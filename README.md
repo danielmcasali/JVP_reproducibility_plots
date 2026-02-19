@@ -14,4 +14,4 @@ MS number – Manuscript identification number.
 Submission date – Date of submission.
 Phylo reviwer – Handling phylogenetic editor.
 Analysis – Type of phylogenetic analysis performed: MP = Maximum Parsimony, ML = Maximum Likelihood, BI = Bayesian Inference.
-Eight reproducibility questions – Binary-coded variables where:n0 = No, 1 = Yes. These questions evaluate the availability of information necessary to reproduce the phylogenetic analyses.
+Eight reproducibility questions – Binary-coded variables where: 0 = No, 1 = Yes. These questions evaluate the availability of information necessary to reproduce the phylogenetic analyses.
