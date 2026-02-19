@@ -2,12 +2,12 @@ Files
 
 1. JVP_script.R
 
-R script used to generate all plots and summaries presented in the manuscript.
-The script reads the dataset JVP_data.csv and produces the figures used in the analysis.
+R script used to generate all plots presented in the manuscript.
+The script reads the dataset JVP_data.csv and produces the figures.
 
 2. JVP_data.csv
 
-Dataset used for all analyses and visualizations.
+Dataset used for summarize the data and to produce visualizations.
 
 Each row corresponds to one manuscript and includes the following information:
 MS number – Manuscript identification number.
