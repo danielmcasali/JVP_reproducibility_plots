@@ -1,6 +1,6 @@
 ######JVP Reproducibility assessment script
 ######Authors: Daniel & Pedro
-######February, 2026
+######March, 2026
 
 #libraries
 library(ggplot2)
@@ -82,19 +82,13 @@ dat2x<-cbind(sep$round,dat2)
 
 
 ##PLOT_2
-	prov_dat<-separate(dat,Submission.date,into=c("D","M","Y"))
-	prov_dat$M<-as.numeric(prov_dat$M)
-	prov_dat$Y<-as.numeric(prov_dat$Y)
-	prov_dat$S<-ifelse(prov_dat$M <= 6, 1, 2)
-	prov_dat$T <- paste(prov_dat$Y, prov_dat$S, sep = "-")
-	
-	prov_long <- prov_dat %>%
-	filter(T != "2022-1") %>%
-	filter(T != "2026-1") %>%
-	pivot_longer(cols = 6:13, names_to = "variable", values_to = "X")  
+	prov_long <- dat %>%
+	filter(Semester != "2022-1") %>%
+	filter(Semester != "2026-1") %>%
+	pivot_longer(cols = 4:11, names_to = "variable", values_to = "X")  
 	prov_long$variable <- factor(prov_long$variable, levels = labels)
 	
-	ggplot(prov_long, aes(x = T, fill = factor(X))) +
+	ggplot(prov_long, aes(x = Semester, fill = factor(X))) +
 	geom_bar(position = "fill") +
 	facet_wrap(~ variable, ncol = 2, nrow = 4) +
 	scale_y_continuous() +
