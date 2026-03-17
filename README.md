@@ -11,7 +11,7 @@ Dataset used for summarize the data and to produce visualizations.
 
 Each row corresponds to one manuscript submisison/resubmisison and includes the following information:
 MS number – Manuscript identification number.
-Submission date – Date of submission.
+Semester – Semester of submission.
 Phylo reviwer – Handling phylogenetic editor.
 Analysis – Type of phylogenetic analysis performed: MP = Maximum Parsimony, ML = Maximum Likelihood, BI = Bayesian Inference.
 Eight reproducibility questions – Binary-coded variables where: 0 = No, 1 = Yes.
